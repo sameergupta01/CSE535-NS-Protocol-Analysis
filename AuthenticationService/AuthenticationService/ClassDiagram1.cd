@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XMLContracts.authToken">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="XMLContracts.AuthenticationServerResponseXML">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="XMLContracts.ReceiverResponseXML">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="XMLContracts.authTokenFixed">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="XMLContracts.AuthenticationServerResponseXMLFixed">
+    <Position X="0.5" Y="3" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="XMLContracts.ReceiverResponseXMLFixed">
+    <Position X="5.5" Y="3" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

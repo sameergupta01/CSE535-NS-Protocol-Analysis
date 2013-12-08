@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{2A8F35CE-0AFA-4E84-9B45-7A20002D3D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "..\Helper\Helper\Helper.csproj", "{6E7085CA-9C39-4C7B-8D44-AE7F25994C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLContracts", "..\XMLContracts\XMLContracts\XMLContracts.csproj", "{8DB14F77-EF47-4F66-815F-C9B19281E923}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A8F35CE-0AFA-4E84-9B45-7A20002D3D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8F35CE-0AFA-4E84-9B45-7A20002D3D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8F35CE-0AFA-4E84-9B45-7A20002D3D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8F35CE-0AFA-4E84-9B45-7A20002D3D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7085CA-9C39-4C7B-8D44-AE7F25994C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7085CA-9C39-4C7B-8D44-AE7F25994C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7085CA-9C39-4C7B-8D44-AE7F25994C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7085CA-9C39-4C7B-8D44-AE7F25994C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB14F77-EF47-4F66-815F-C9B19281E923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB14F77-EF47-4F66-815F-C9B19281E923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB14F77-EF47-4F66-815F-C9B19281E923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB14F77-EF47-4F66-815F-C9B19281E923}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

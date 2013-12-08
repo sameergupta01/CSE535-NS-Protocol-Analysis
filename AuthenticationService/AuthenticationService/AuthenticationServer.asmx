@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="AuthenticationServer.asmx.cs" Class="NS_AuthenticationServer.AuthenticationServer" %>

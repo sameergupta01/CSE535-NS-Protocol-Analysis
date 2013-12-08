@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ClientApplication.FixedVersionDesign">
+    <Position X="14.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAABAAAAAAAAAIAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>FixedVersionDesign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientAppliaction.FlawedVersionDesign">
+    <Position X="14.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAABAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlawedVersionDesign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientAppliaction.Sender">
+    <Position X="17.25" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAABAUqAiAEBBCKgIAAAABwIAAAwAAAAA=</HashCode>
+      <FileName>Sender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication1.Program">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.AuthenticationServer.AuthenticationServerSoapClient" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="3.5" Width="8" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAEAAAAAAAA=</HashCode>
+      <FileName>Service References\AuthenticationServer\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClientApplication.Receiver.ReceiveServiceSoapClient" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.5" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAFABQAAEAAAAAAAAEAAACAAAAICA=</HashCode>
+      <FileName>Service References\Receiver\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ClientApplication.AuthenticationServer.AuthenticationServerSoap">
+    <Position X="0.5" Y="3.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Service References\AuthenticationServer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClientApplication.AuthenticationServer.AuthenticationServerSoapChannel" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\AuthenticationServer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClientApplication.Receiver.ReceiveServiceSoap">
+    <Position X="0.5" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABABAAAAAAAAAAAAEAAACAAAAIAA=</HashCode>
+      <FileName>Service References\Receiver\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClientApplication.Receiver.ReceiveServiceSoapChannel" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\Receiver\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ClientApplication.Receiver.EncryptionType">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAASAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\Receiver\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="authenticateSender">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authenticationTokenXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enc_type" type="tns:EncryptionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="EncryptionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="AES" />
+          <s:enumeration value="DES" />
+          <s:enumeration value="OpenSSL" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="authenticateSenderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authenticateSenderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificationAndAlive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enc_type" type="tns:EncryptionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificationAndAliveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificationAndAliveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonceForAuthentication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sender_userName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enc_type" type="tns:EncryptionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonceForAuthenticationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNonceForAuthenticationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="authenticateSenderFixed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authenticationTokenXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enc_type" type="tns:EncryptionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="authenticateSenderFixedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authenticateSenderFixedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificationAndAliveFixed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enc_type" type="tns:EncryptionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificationAndAliveFixedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificationAndAliveFixedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="authenticateSenderSoapIn">
+    <wsdl:part name="parameters" element="tns:authenticateSender" />
+  </wsdl:message>
+  <wsdl:message name="authenticateSenderSoapOut">
+    <wsdl:part name="parameters" element="tns:authenticateSenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificationAndAliveSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificationAndAlive" />
+  </wsdl:message>
+  <wsdl:message name="VerificationAndAliveSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificationAndAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNonceForAuthenticationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNonceForAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="GetNonceForAuthenticationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNonceForAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="authenticateSenderFixedSoapIn">
+    <wsdl:part name="parameters" element="tns:authenticateSenderFixed" />
+  </wsdl:message>
+  <wsdl:message name="authenticateSenderFixedSoapOut">
+    <wsdl:part name="parameters" element="tns:authenticateSenderFixedResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificationAndAliveFixedSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificationAndAliveFixed" />
+  </wsdl:message>
+  <wsdl:message name="VerificationAndAliveFixedSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificationAndAliveFixedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ReceiveServiceSoap">
+    <wsdl:operation name="authenticateSender">
+      <wsdl:input message="tns:authenticateSenderSoapIn" />
+      <wsdl:output message="tns:authenticateSenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAlive">
+      <wsdl:input message="tns:VerificationAndAliveSoapIn" />
+      <wsdl:output message="tns:VerificationAndAliveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonceForAuthentication">
+      <wsdl:input message="tns:GetNonceForAuthenticationSoapIn" />
+      <wsdl:output message="tns:GetNonceForAuthenticationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="authenticateSenderFixed">
+      <wsdl:input message="tns:authenticateSenderFixedSoapIn" />
+      <wsdl:output message="tns:authenticateSenderFixedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAliveFixed">
+      <wsdl:input message="tns:VerificationAndAliveFixedSoapIn" />
+      <wsdl:output message="tns:VerificationAndAliveFixedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReceiveServiceSoap" type="tns:ReceiveServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="authenticateSender">
+      <soap:operation soapAction="http://tempuri.org/authenticateSender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAlive">
+      <soap:operation soapAction="http://tempuri.org/VerificationAndAlive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonceForAuthentication">
+      <soap:operation soapAction="http://tempuri.org/GetNonceForAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateSenderFixed">
+      <soap:operation soapAction="http://tempuri.org/authenticateSenderFixed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAliveFixed">
+      <soap:operation soapAction="http://tempuri.org/VerificationAndAliveFixed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReceiveServiceSoap12" type="tns:ReceiveServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="authenticateSender">
+      <soap12:operation soapAction="http://tempuri.org/authenticateSender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAlive">
+      <soap12:operation soapAction="http://tempuri.org/VerificationAndAlive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonceForAuthentication">
+      <soap12:operation soapAction="http://tempuri.org/GetNonceForAuthentication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateSenderFixed">
+      <soap12:operation soapAction="http://tempuri.org/authenticateSenderFixed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificationAndAliveFixed">
+      <soap12:operation soapAction="http://tempuri.org/VerificationAndAliveFixed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReceiveService">
+    <wsdl:port name="ReceiveServiceSoap" binding="tns:ReceiveServiceSoap">
+      <soap:address location="http://localhost:3803/Receiver.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReceiveServiceSoap12" binding="tns:ReceiveServiceSoap12">
+      <soap12:address location="http://localhost:3803/Receiver.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
